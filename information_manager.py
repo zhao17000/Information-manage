@@ -1,6 +1,7 @@
 import numpy as np
 
-informations = []
+informations_npy=np.load("informations.npy",allow_pickle=False)
+informations = informations_npy.tolist()
 
 def add():
     global informations
